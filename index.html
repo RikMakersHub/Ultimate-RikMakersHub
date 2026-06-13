@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate RikMakersHub // Central Matrix Portal</title>
+    <style>
+        :root {
+            --bg-main: #f0f4f8;
+            --bg-card: #ffffff;
+            --banner-dark: #111e2e;
+            --border-light: #e2e8f0;
+            --text-main: #334155;
+            --text-muted: #64748b;
+            --accent-cyan: #00bae2;
+            --accent-blue: #0284c7;
+            --accent-green: #10b981;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+        body { background-color: var(--bg-main); color: var(--text-main); min-height: 100vh; display: flex; flex-direction: column; }
+        
+        /* Main Navigation Banner */
+        header { 
+            background-color: var(--banner-dark); 
+            color: #ffffff; 
+            text-align: center; 
+            padding: 2rem 1.5rem; 
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+        header h1 { font-size: 1.8rem; font-weight: 700; letter-spacing: 0.5px; }
+        header .subtitle { color: #94a3b8; font-size: 0.9rem; margin-top: 0.5rem; }
+
+        /* Main Workspace Container */
+        main { 
+            max-width: 1100px; 
+            width: 100%; 
+            margin: 0 auto; 
+            padding: 2.5rem 1.5rem; 
+            flex: 1; 
+        }
+
+        .matrix-intro {
+            text-align: center;
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-left: 5px solid var(--accent-cyan);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+            font-size: 0.95rem;
+            color: var(--text-main);
+            font-weight: 500;
+        }
+
+        /* Sector Grid Blocks */
+        .portal-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+            gap: 1.5rem; 
+        }
+
+        .branch-card { 
+            background-color: var(--bg-card); 
+            border: 1px solid var(--border-light); 
+            border-radius: 12px; 
+            padding: 1.5rem; 
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.04);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .branch-card:hover { 
+            transform: translateY(-2px); 
+            box-shadow: 0 12px 30px -5px rgba(0,0,0,0.08);
+        }
+
+        /* Custom Left Border Tags per Sector Channel */
+        .tag-dev { border-left: 5px solid var(--accent-blue); }
+        .tag-ag { border-left: 5px solid var(--accent-green); }
+        .tag-eco { border-left: 5px solid #a855f7; }
+        .tag-fin { border-left: 5px solid var(--accent-yellow); }
+        .tag-ed { border-left: 5px solid #f43f5e; }
+
+        .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; }
+        .branch-title { font-size: 1.15rem; font-weight: 700; color: #1e293b; }
+        .sector-badge { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; padding: 0.2rem 0.5rem; border-radius: 4px; background: #f1f5f9; color: var(--text-muted); }
+
+        .branch-desc { font-size: 0.85rem; color: var(--text-muted); line-height: 1.4; margin-bottom: 1.5rem; }
+
+        /* Neon Style Access Buttons */
+        .launch-btn { 
+            background-color: var(--accent-cyan); 
+            color: #ffffff; 
+            text-align: center;
+            font-weight: 600; 
+            font-size: 0.85rem; 
+            padding: 0.6rem 1.25rem; 
+            border-radius: 6px; 
+            text-decoration: none; 
+            display: block;
+            box-shadow: 0 4px 10px rgba(0, 186, 226, 0.15);
+            transition: background-color 0.2s, box-shadow 0.2s;
+        }
+        .launch-btn:hover { 
+            background-color: #009ec0; 
+            box-shadow: 0 4px 12px rgba(0, 186, 226, 0.3);
+        }
+
+        /* Footer System */
+        footer { 
+            background-color: var(--banner-dark); 
+            color: #94a3b8; 
+            font-size: 0.75rem; 
+            padding: 1.25rem 2rem; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            border-top: 1px solid #1e293b; 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🚀 Ultimate RikMakersHub</h1>
+        <div class="subtitle">| Central Architecture Deployment Matrix & Production Routing Nexus |</div>
+    </header>
+
+    <main>
+        <div class="matrix-intro">
+            ⚡ Select an operational brand node below to route directly to its production infrastructure deployment platform.
+        </div>
+
+        <div class="portal-grid">
+            
+            <!-- DevTools Core -->
+            <div class="branch-card tag-dev">
+                <div>
+                    <div class="card-header">
+                        <div class="branch-title">RikLogEngine-Pro</div>
+                        <span class="sector-badge">DevTools</span>
+                    </div>
+                    <div class="branch-desc">High-performance 13ms dual-layer log clustering engine featuring local regex tokenization variables and system health index monitors.</div>
+                </div>
+                <a href="https://github.io" target="_blank" class="launch-btn">Launch Visualizer</a>
+            </div>
+
+            <!-- AgTech Sector -->
+            <div class="branch-card tag-ag">
+                <div>
+                    <div class="card-header">
+                        <div class="branch-title">RikKisaanSahayak-Pro</div>
+                        <span class="sector-badge">Agtech</span>
+                    </div>
+                    <div class="branch-desc">Off-grid agricultural platform powering local multi-node edge controllers and localized agricultural optimization tools.</div>
+                </div>
+                <a href="#" class="launch-btn">Access Farm Core</a>
+            </div>
+
+            <!-- EcoTech Sensor Systems -->
+            <div class="branch-card tag-eco">
+                <div>
+                    <div class="card-header">
+                        <div class="branch-title">RikAquaShield-Pro</div>
+                        <span class="sector-badge">EcoTech</span>
+                    </div>
+                    <div class="branch-desc">Firmware deployment layouts hosting sub-20µA deep-sleep hardware routines optimized for long-term solar water automation.</div>
+                </div>
+                <a href="#" class="launch-btn">Initialize Automation Node</a>
+            </div>
+
+            <!-- FinTech Sector -->
+            <div class="branch-card tag-fin">
+                <div>
+                    <div class="card-header">
+                        <div class="branch-title">RikFinTech-Pro</div>
+                        <span class="sector-badge">FinTech</span>
+                    </div>
+                    <div class="branch-desc">Low-latency backend ledger processing network simulating cryptographic edge transactional authentication handshakes.</div>
+                </div>
+                <a href="#" class="launch-btn">Load Financial Matrix</a>
+            </div>
+
+            <!-- EdTech Platform -->
+            <div class="branch-card tag-ed">
+                <div>
+                    <div class="card-header">
+                        <div class="branch-title">CBSE Cracker (Class 9-10)</div>
+                        <span class="sector-badge">EdTech</span>
+                    </div>
+                    <div class="branch-desc">Interactive, web-optimized peer resource space serving curriculum tracking assets and modular test matrices.</div>
+                </div>
+                <a href="#" class="launch-btn">Open Learning Portal</a>
+            </div>
+
+            <!-- Fluid Spectrometer Analytics -->
+            <div class="branch-card tag-eco">
+                <div>
+                    <div class="card-header">
+                        <div class="branch-title">RikHydroTech-Pro</div>
+                        <span class="sector-badge">Fluid Analytics</span>
+                    </div>
+                    <div class="branch-desc">Optical analytics platform mapped to process data sets output by the under-₹350 pulsed RGB fluid spectrometer hardware layer.</div>
+                </div>
+                <a href="#" class="launch-btn">Run Spectrometer View</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <span>© 2026 RikMakersHub Pro Architecture Systems. All Rights Reserved.</span>
+        <span>Ecosystem Global Router v1.0.0</span>
+    </footer>
+
+</body>
+</html>
