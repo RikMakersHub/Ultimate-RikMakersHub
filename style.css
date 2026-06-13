@@ -1,0 +1,165 @@
+:root {
+    --bg-main: #f0f4f8;
+    --bg-card: #ffffff;
+    --banner-dark: #111e2e;
+    --border-light: #e2e8f0;
+    --text-main: #334155;
+    --text-muted: #64748b;
+    --accent-cyan: #00bae2;
+    --accent-blue: #0284c7;
+    --accent-green: #10b981;
+    --accent-purple: #a855f7;
+    --accent-yellow: #f59e0b;
+    --accent-red: #f43f5e;
+}
+
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; 
+}
+
+body { 
+    background-color: var(--bg-main); 
+    color: var(--text-main); 
+    min-height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+/* Top Navigation Banner */
+header { 
+    background-color: var(--banner-dark); 
+    color: #ffffff; 
+    text-align: center; 
+    padding: 2rem 1.5rem; 
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+}
+header h1 { 
+    font-size: 1.8rem; 
+    font-weight: 700; 
+    letter-spacing: 0.5px; 
+}
+header .subtitle { 
+    color: #94a3b8; 
+    font-size: 0.9rem; 
+    margin-top: 0.5rem; 
+}
+
+/* Main Workspace Grid Space */
+main { 
+    max-width: 1200px; 
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 2.5rem 1.5rem; 
+    flex: 1; 
+}
+
+.matrix-intro {
+    text-align: center;
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-left: 5px solid var(--accent-cyan);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+    font-size: 0.95rem;
+    color: var(--text-main);
+    font-weight: 500;
+}
+
+.portal-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); 
+    gap: 1.5rem; 
+}
+
+/* Structural Branch Card Definitions */
+.branch-card { 
+    background-color: var(--bg-card); 
+    border: 1px solid var(--border-light); 
+    border-radius: 12px; 
+    padding: 1.5rem; 
+    box-shadow: 0 10px 25px -5px rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.branch-card:hover { 
+    transform: translateY(-2px); 
+    box-shadow: 0 12px 30px -5px rgba(0,0,0,0.08);
+}
+
+/* Vertical Core Color Channels */
+.tag-dev { border-left: 5px solid var(--accent-blue); }
+.tag-ag { border-left: 5px solid var(--accent-green); }
+.tag-eco { border-left: 5px solid var(--accent-purple); }
+.tag-fin { border-left: 5px solid var(--accent-yellow); }
+.tag-ed { border-left: 5px solid var(--accent-red); }
+.tag-hub { border-left: 5px solid var(--accent-cyan); }
+
+.card-header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 0.75rem; 
+}
+.branch-title { 
+    font-size: 1.15rem; 
+    font-weight: 700; 
+    color: #1e293b; 
+}
+.sector-badge { 
+    font-size: 0.65rem; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    padding: 0.2rem 0.5rem; 
+    border-radius: 4px; 
+    background: #f1f5f9; 
+    color: var(--text-muted); 
+}
+
+.branch-desc { 
+    font-size: 0.85rem; 
+    color: var(--text-muted); 
+    line-height: 1.4; 
+    margin-bottom: 1.5rem; 
+}
+
+/* Hyper-Targeted Routing Interface Buttons */
+.launch-btn { 
+    background-color: var(--accent-cyan); 
+    color: #ffffff; 
+    text-align: center;
+    font-weight: 600; 
+    font-size: 0.85rem; 
+    padding: 0.6rem 1.25rem; 
+    border-radius: 6px; 
+    text-decoration: none; 
+    display: block;
+    box-shadow: 0 4px 10px rgba(0, 186, 226, 0.15);
+    transition: background-color 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+.launch-btn:hover { 
+    background-color: #009ec0; 
+    box-shadow: 0 4px 12px rgba(0, 186, 226, 0.3);
+}
+
+/* System Footing */
+footer { 
+    background-color: var(--banner-dark); 
+    color: #94a3b8; 
+    font-size: 0.75rem; 
+    padding: 1.25rem 2rem; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    border-top: 1px solid #1e293b; 
+    margin-top: auto;
+}
