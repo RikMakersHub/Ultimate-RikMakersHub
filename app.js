@@ -44,9 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
     buttons.forEach(button => {
         button.addEventListener("click", (e) => {
             const routeKey = e.target.getAttribute("data-route");
-            if (routes[routeKey]) {
-                // Initialize secure isolated browser tab handshakes
-                window.open(routes[routeKey], "_blank", "noopener,noreferrer");
+            if (routes[routeKey]) {window.open(routes[routeKey], "_blank", "noopener,noreferrer");
             } else {
                 console.warn(`Routing vector key mapping mismatch: ${routeKey}`);
             }
