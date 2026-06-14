@@ -2,8 +2,11 @@
 
 Welcome to the central deployment hub for the **RikMakersHub Architecture Systems**. This repository hosts the master multi-tier grid matrix designed to route natively to various operational brand nodes, decentralized web tools, and deep-tech production platforms.
 
-🔗 **Live Routing Portal:** [https://rikmakershub.github.io/Ultimate-RikMakersHub/]
-🛠️ **Hardware Documentation:** https://www.hackster.io/RikMakersHub
+🔗 **Live Routing Portal:** [Visit Utlimate-RikMakersHub](https://rikmakershub.github.io/Ultimate-RikMakersHub/)
+
+🛠️ **Hardware Documentation:** [Go to Hackster](https://www.hackster.io/RikMakersHub)
+
+🌐 **Software documentation:** [Visit Dev](https://dev.to/rikmakershub)  
 
 ---
 
